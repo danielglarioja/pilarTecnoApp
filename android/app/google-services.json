@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "499131793161-6ad3m5mno0a8dj8slrhri9mqgsjku0dr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dardiles.pilartecnoapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
           "client_id": "499131793161-7q304qfvn7pv53sapl85frpqr01hhd29.apps.googleusercontent.com",
           "client_type": 3
         }
