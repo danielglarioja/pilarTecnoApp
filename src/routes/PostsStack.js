@@ -24,9 +24,42 @@ export const PostsStackScreen = () => {
                 },
             }}
             />
-            <PostsStack.Screen name="PostDetail" component={PostDetail} />
-            <PostsStack.Screen name="PostEdit" component={PostEdit} />
-            <PostsStack.Screen name="PostCreate" component={PostCreate} />
+            <PostsStack.Screen
+                name="PostDetail"
+                component={PostDetail}
+                options={{
+                    title: 'Post Detail',
+                    headerTintColor: 'rgb(118, 177, 195)',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    
+                }}
+            />
+            <PostsStack.Screen
+                name="PostEdit"
+                component={PostEdit}
+                options={{
+                    title: 'Post Edit',
+                    headerTintColor: 'rgb(118, 177, 195)',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    
+                }}
+            />
+            <PostsStack.Screen
+                name="PostCreate"
+                component={PostCreate}
+                options={{
+                    title: 'Post Create',
+                    headerTintColor: 'rgb(118, 177, 195)',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    
+                }}
+            />
         </PostsStack.Navigator>
     )
 }

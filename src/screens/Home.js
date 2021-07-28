@@ -25,9 +25,9 @@ const Home = (props) => {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView>
       <ImageBackground
-        style={{ height, paddingTop: height / 30 }}
+        style={{ height}}
         source={require('../assets/images/Lamp.jpg')}
       >
         <View style={{ flexDirection: 'column', height, justifyContent: 'center' }}>
