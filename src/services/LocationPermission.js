@@ -1,4 +1,4 @@
-import { PermissionsAndroid } from "react-native";
+import { PermissionsAndroid, Platform, ToastAndroid } from "react-native";
 export const hasLocationPermission = async () => {
     if (Platform.OS === 'ios') {
         const hasPermission = await this.hasLocationPermissionIOS();
@@ -22,18 +22,18 @@ export const hasLocationPermission = async () => {
     if (status === PermissionsAndroid.RESULTS.DENIED) {
         ToastAndroid.show(
             'Location permission denied by user.',
-            ToastAndroid.LONG,
+            ToastAndroid.LONG
         );
     } else if (status === PermissionsAndroid.RESULTS.NEVER_ASK_AGAIN) {
         ToastAndroid.show(
             'Location permission revoked by user.',
-            ToastAndroid.LONG,
+            ToastAndroid.LONG
         );
     }
     return false;
 };
 
-hasLocationPermissionIOS = async () => {
+export const hasLocationPermissionIOS = async () => {
     const openSetting = () => {
         Linking.openSettings().catch(() => {
             Alert.alert('Unable to open settings');
